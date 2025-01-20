@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog SYSTEM "catalog.dtd">
+<catalog>
+    <!-- Llista d'actors -->
+    <llista_actors>
+        <actor id="A1">
+            <nom>Robert De Niro</nom>
+            <edat>81</edat>
+        </actor>
+        <actor id="A2">
+            <nom>Robert Downey Jr</nom>
+            <edat>59</edat>
+        </actor>
+        <actor id="A3">
+            <nom>Cillian Murphy</nom>
+            <edat>48</edat>
+        </actor>
+    </llista_actors>
+    
+    <!-- Llista de pel·lícules -->
+    <llista_pelicules>
+        <pelicula id="P1">
+            <titol idioma="en">Heat</titol>
+            <director>Michael Mann</director>
+            <any>1995</any>  
+            <actors>
+                <aref ref="A1"/>
+            </actors>
+        </pelicula>
+        <pelicula id="P2">
+            <titol idioma="en">Oppenheimer</titol>
+            <director>Christopher Nolan</director>
+            <any>2023</any>
+            <actors>
+                <aref ref="A2"/>
+                <aref ref="A3"/>
+            </actors>
+        </pelicula>
+    </llista_pelicules>
+    
+    <!-- Llista de recomanacions -->
+    <llista_recomanacions_pelicules>
+        <recomanacio ref="P1"/>
+        <recomanacio ref="P2"/>
+    </llista_recomanacions_pelicules>
+</catalog>
